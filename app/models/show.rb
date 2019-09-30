@@ -13,6 +13,6 @@ class Show < ActiveRecord::Base
   end
   
   def self.lease_popular_show
-    Show.
+    Show.where(rating: Show.lowest_rating).order(:name)
   end
 end
