@@ -1,7 +1,8 @@
 class Show < ActiveRecord::Base
   
   def highest_rating
-    Show.where
+    high = Show.new 
+    high.
   end
 
 end
