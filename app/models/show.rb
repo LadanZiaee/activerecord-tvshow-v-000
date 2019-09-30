@@ -11,4 +11,6 @@ class Show < ActiveRecord::Base
   def self.lowest_rating
     show = Show.minimum(:rating)
     min = Show.where(rating: show)
+  end
+  
 end
