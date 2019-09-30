@@ -12,4 +12,7 @@ class Show < ActiveRecord::Base
     Show.minimum(:rating)
   end
   
+  def self.lease_popular_show
+    Show.
+  end
 end
